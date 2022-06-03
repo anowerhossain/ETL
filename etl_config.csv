@@ -1,0 +1,7 @@
+source_ip,source_db,source_table,dest_ip,dest_db,dest_table,refresh_type,time_ind_col,primary_key_col,update_col,bulk_size,is_active
+192.168.168.18,test_db,account_types,192.168.168.50,postgres,po_account_types,FULL,,id,,10000,1
+192.168.168.18,test_db,accounts,192.168.168.50,postgres,po_accounts,INCREMENTAL,create_date,id,updated_at,10000,1
+192.168.168.18,test_db,transfer_types,192.168.168.50,postgres,po_transfer_types,FULL,,id,,10000,1
+192.168.168.18,test_db,transfers,192.168.168.50,postgres,po_transfers,INCREMENTAL,create_date,id,updated_at,10000,1
+192.168.168.18,test_db,client_locations,192.168.168.50,postgres,po_client_locations,INCREMENTAL,created_at,id,updated_date,10000,1
+
